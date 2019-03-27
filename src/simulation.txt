@@ -1,0 +1,228 @@
+Tower says: Baloon#B1(1) registered to weather tower.
+Tower says: Baloon#B2(2) registered to weather tower.
+Tower says: JetPlane#J1(3) registered to weather tower.
+Tower says: Helicopter#H1(4) registered to weather tower.
+Tower says: Helicopter#H2(5) registered to weather tower.
+Tower says: Helicopter#H3(6) registered to weather tower.
+Tower says: Baloon#B3(7) registered to weather tower.
+Tower says: JetPlane#J2(8) registered to weather tower.
+Tower says: Helicopter#H4(9) registered to weather tower.
+
+Simulation: 1
+
+Baloon#B1(1): FOG! FOG everywhere
+Baloon#B2(2): It's to bloody hot today.
+JetPlane#J1(3): Keep calm, there will be a snow day soon.
+Helicopter#H1(4): Rain please stop or go to Africa.
+Helicopter#H2(5): Today's forecast... Holy crap, I can't feel my face degrees
+Helicopter#H3(6): Let's enjoy the sunny weather
+Baloon#B3(7): It's NEVER too cold for ice cream. Am-nam-nam...
+JetPlane#J2(8): Oh no it's FOG! I can't see anything
+Helicopter#H4(9): Today's forecast... Holy crap, I can't feel my face degrees
+
+Simulation: 2
+
+Baloon#B1(1): It's to bloody hot today.
+Baloon#B2(2): It's NEVER too cold for ice cream. Am-nam-nam...
+JetPlane#J1(3): The sun blinds my eyes!
+Helicopter#H1(4): Rain please stop or go to Africa.
+Helicopter#H2(5): Today's forecast... Holy crap, I can't feel my face degrees
+Helicopter#H3(6): Let's enjoy the sunny weather
+Baloon#B3(7): FOG! FOG everywhere
+JetPlane#J2(8): Keep calm, there will be a snow day soon.
+Helicopter#H4(9): Today's forecast... Holy crap, I can't feel my face degrees
+
+Simulation: 3
+
+Baloon#B1(1): It's to bloody hot today.
+Baloon#B2(2): FOG! FOG everywhere
+JetPlane#J1(3): The sun blinds my eyes!
+Helicopter#H1(4): Let's enjoy the sunny weather
+Helicopter#H2(5): Rain please stop or go to Africa.
+Helicopter#H3(6): Today's forecast... Holy crap, I can't feel my face degrees
+Baloon#B3(7): It's to bloody hot today.
+JetPlane#J2(8): RAIN? Free carwash.
+Helicopter#H4(9): Rain please stop or go to Africa.
+
+Simulation: 4
+
+Baloon#B1(1): Thank God I brought my umbrella
+Baloon#B2(2): It's NEVER too cold for ice cream. Am-nam-nam...
+JetPlane#J1(3): Oh no it's FOG! I can't see anything
+Helicopter#H1(4): Rain please stop or go to Africa.
+Helicopter#H2(5): Let's enjoy the sunny weather
+Helicopter#H3(6): Today's forecast... Holy crap, I can't feel my face degrees
+Baloon#B3(7): It's NEVER too cold for ice cream. Am-nam-nam...
+JetPlane#J2(8): Oh no it's FOG! I can't see anything
+Helicopter#H4(9): Let's enjoy the sunny weather
+
+Simulation: 5
+
+Baloon#B1(1): FOG! FOG everywhere
+Baloon#B2(2): FOG! FOG everywhere
+JetPlane#J1(3): Oh no it's FOG! I can't see anything
+Helicopter#H1(4): Welcome to Silent Hill! Lost in the fog.
+Helicopter#H2(5): Today's forecast... Holy crap, I can't feel my face degrees
+Helicopter#H3(6): Welcome to Silent Hill! Lost in the fog.
+Baloon#B3(7): It's to bloody hot today.
+JetPlane#J2(8): Oh no it's FOG! I can't see anything
+Helicopter#H4(9): Rain please stop or go to Africa.
+
+Simulation: 6
+
+Baloon#B1(1): It's NEVER too cold for ice cream. Am-nam-nam...
+Baloon#B2(2): It's NEVER too cold for ice cream. Am-nam-nam...
+JetPlane#J1(3): Oh no it's FOG! I can't see anything
+Helicopter#H1(4): Rain please stop or go to Africa.
+Helicopter#H2(5): Today's forecast... Holy crap, I can't feel my face degrees
+Helicopter#H2(5): landing.
+Tower says: Helicopter#H2(5): unregistered from weather tower.
+Helicopter#H3(6): Today's forecast... Holy crap, I can't feel my face degrees
+Baloon#B3(7): It's to bloody hot today.
+JetPlane#J2(8): Keep calm, there will be a snow day soon.
+Helicopter#H4(9): Today's forecast... Holy crap, I can't feel my face degrees
+
+Simulation: 7
+
+Baloon#B1(1): It's NEVER too cold for ice cream. Am-nam-nam...
+Baloon#B1(1):  landing.
+Tower says: Baloon#B1(1):  unregistered from weather tower.
+Baloon#B2(2): It's to bloody hot today.
+JetPlane#J1(3): Oh no it's FOG! I can't see anything
+Helicopter#H1(4): Rain please stop or go to Africa.
+Helicopter#H3(6): Today's forecast... Holy crap, I can't feel my face degrees
+Baloon#B3(7): Thank God I brought my umbrella
+JetPlane#J2(8): The sun blinds my eyes!
+Helicopter#H4(9): Today's forecast... Holy crap, I can't feel my face degrees
+
+Simulation: 8
+
+Baloon#B2(2): FOG! FOG everywhere
+JetPlane#J1(3): Keep calm, there will be a snow day soon.
+Helicopter#H1(4): Rain please stop or go to Africa.
+Helicopter#H3(6): Today's forecast... Holy crap, I can't feel my face degrees
+Baloon#B3(7): It's to bloody hot today.
+JetPlane#J2(8): Keep calm, there will be a snow day soon.
+Helicopter#H4(9): Today's forecast... Holy crap, I can't feel my face degrees
+Helicopter#H4(9): landing.
+Tower says: Helicopter#H4(9): unregistered from weather tower.
+
+Simulation: 9
+
+Baloon#B2(2): FOG! FOG everywhere
+JetPlane#J1(3): Keep calm, there will be a snow day soon.
+Helicopter#H1(4): Today's forecast... Holy crap, I can't feel my face degrees
+Helicopter#H3(6): Today's forecast... Holy crap, I can't feel my face degrees
+Baloon#B3(7): FOG! FOG everywhere
+JetPlane#J2(8): Keep calm, there will be a snow day soon.
+
+Simulation: 10
+
+Baloon#B2(2): It's NEVER too cold for ice cream. Am-nam-nam...
+JetPlane#J1(3): Oh no it's FOG! I can't see anything
+Helicopter#H1(4): Let's enjoy the sunny weather
+Helicopter#H3(6): Rain please stop or go to Africa.
+Baloon#B3(7): FOG! FOG everywhere
+JetPlane#J2(8): RAIN? Free carwash.
+
+Simulation: 11
+
+Baloon#B2(2): It's NEVER too cold for ice cream. Am-nam-nam...
+Baloon#B2(2):  landing.
+Tower says: Baloon#B2(2):  unregistered from weather tower.
+JetPlane#J1(3): The sun blinds my eyes!
+Helicopter#H1(4): Welcome to Silent Hill! Lost in the fog.
+Helicopter#H3(6): Rain please stop or go to Africa.
+Baloon#B3(7): FOG! FOG everywhere
+JetPlane#J2(8): The sun blinds my eyes!
+
+Simulation: 12
+
+JetPlane#J1(3): RAIN? Free carwash.
+Helicopter#H1(4): Let's enjoy the sunny weather
+Helicopter#H3(6): Rain please stop or go to Africa.
+Baloon#B3(7): It's NEVER too cold for ice cream. Am-nam-nam...
+Baloon#B3(7):  landing.
+Tower says: Baloon#B3(7):  unregistered from weather tower.
+JetPlane#J2(8): Oh no it's FOG! I can't see anything
+
+Simulation: 13
+
+JetPlane#J1(3): Keep calm, there will be a snow day soon.
+Helicopter#H1(4): Welcome to Silent Hill! Lost in the fog.
+Helicopter#H3(6): Welcome to Silent Hill! Lost in the fog.
+JetPlane#J2(8): The sun blinds my eyes!
+
+Simulation: 14
+
+JetPlane#J1(3): Oh no it's FOG! I can't see anything
+Helicopter#H1(4): Today's forecast... Holy crap, I can't feel my face degrees
+Helicopter#H3(6): Today's forecast... Holy crap, I can't feel my face degrees
+JetPlane#J2(8): Oh no it's FOG! I can't see anything
+
+Simulation: 15
+
+JetPlane#J1(3): The sun blinds my eyes!
+Helicopter#H1(4): Today's forecast... Holy crap, I can't feel my face degrees
+Helicopter#H1(4): landing.
+Tower says: Helicopter#H1(4): unregistered from weather tower.
+Helicopter#H3(6): Welcome to Silent Hill! Lost in the fog.
+JetPlane#J2(8): Keep calm, there will be a snow day soon.
+
+Simulation: 16
+
+JetPlane#J1(3): Oh no it's FOG! I can't see anything
+Helicopter#H3(6): Welcome to Silent Hill! Lost in the fog.
+JetPlane#J2(8): The sun blinds my eyes!
+
+Simulation: 17
+
+JetPlane#J1(3): RAIN? Free carwash.
+Helicopter#H3(6): Let's enjoy the sunny weather
+JetPlane#J2(8): Oh no it's FOG! I can't see anything
+
+Simulation: 18
+
+JetPlane#J1(3): RAIN? Free carwash.
+Helicopter#H3(6): Today's forecast... Holy crap, I can't feel my face degrees
+JetPlane#J2(8): Oh no it's FOG! I can't see anything
+
+Simulation: 19
+
+JetPlane#J1(3): The sun blinds my eyes!
+Helicopter#H3(6): Welcome to Silent Hill! Lost in the fog.
+JetPlane#J2(8): Oh no it's FOG! I can't see anything
+
+Simulation: 20
+
+JetPlane#J1(3): RAIN? Free carwash.
+Helicopter#H3(6): Rain please stop or go to Africa.
+JetPlane#J2(8): Oh no it's FOG! I can't see anything
+
+Simulation: 21
+
+JetPlane#J1(3): RAIN? Free carwash.
+Helicopter#H3(6): Today's forecast... Holy crap, I can't feel my face degrees
+Helicopter#H3(6): landing.
+Tower says: Helicopter#H3(6): unregistered from weather tower.
+JetPlane#J2(8): Keep calm, there will be a snow day soon.
+
+Simulation: 22
+
+JetPlane#J1(3): RAIN? Free carwash.
+JetPlane#J2(8): Oh no it's FOG! I can't see anything
+
+Simulation: 23
+
+JetPlane#J1(3): The sun blinds my eyes!
+JetPlane#J2(8): Keep calm, there will be a snow day soon.
+
+Simulation: 24
+
+JetPlane#J1(3): RAIN? Free carwash.
+JetPlane#J2(8): The sun blinds my eyes!
+
+Simulation: 25
+
+JetPlane#J1(3): RAIN? Free carwash.
+JetPlane#J2(8): Keep calm, there will be a snow day soon.

@@ -35,20 +35,17 @@ public class Tower {
     }
 
     public void putDataToFile(String content) {
-        this.file = new File("simulation.txt");
         try {
+
+            this.file = new File("simulation.txt");
             this.file.createNewFile();
+            this.writer = new BufferedWriter(new FileWriter(file, true));
+            writer.write(content + "\n");
+            writer.flush();
         } catch (FileAlreadyExistsException e) {
-            System.out.println("[31m Error: [0malready exists: " + e.getMessage());
+            System.out.println((char)27 + "[31m Error: " + (char)27 + "[0m" +"already exists: " + e.getMessage());
         } catch (IOException e) {
             e.printStackTrace();
-        }
-
-        try {
-            this.writer = new BufferedWriter(new FileWriter(file));
-            writer.write(content);
-        } catch (IOException io) {
-            io.printStackTrace();
         }
     }
 }

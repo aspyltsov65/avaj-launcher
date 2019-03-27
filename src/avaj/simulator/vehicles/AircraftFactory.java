@@ -1,8 +1,9 @@
 package avaj.simulator.vehicles;
+import avaj.simulator.CustomExceptions.IncorrectAircraftType;
 import avaj.simulator.Interface.Flyable;
 
 public class AircraftFactory {
-    public static Flyable newAircraft(String type, String name, int longitude, int latitude, int height) {
+    public static Flyable newAircraft(String type, String name, int longitude, int latitude, int height) throws IncorrectAircraftType {
 
         Coordinates coordinates = new Coordinates(longitude, latitude, height);
 
@@ -14,9 +15,8 @@ public class AircraftFactory {
             case "Helicopter":
                 return new Helicopter(name, coordinates);
             default:
-                System.out.println("[31m Error: [0m Aircraft type [37m" + type + "[0m not defined");
-                System.exit(1);
-                return null;
+                throw new IncorrectAircraftType(String.format((char)27 +"[31mIncorrect aircraft type: " + (char)27 + "[0m" + type));
         }
     }
+
 }

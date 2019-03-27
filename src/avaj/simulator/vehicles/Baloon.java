@@ -11,42 +11,63 @@ public class Baloon extends Aircraft implements Flyable {
     }
 
     public void updateConditions() {
-        Coordinates newCoord;
         String weatherType = weatherTower.getWeather(this.coordinates);
-        StringBuilder aircraftInformation = new StringBuilder();
-        aircraftInformation.append(String.format("Baloon# %s (%s):", this.name, this.id));
 
+        StringBuilder aircraftInformation = new StringBuilder();
+        aircraftInformation.append(String.format("Baloon#%s(%s): ", this.name, this.id));
+
+        StringBuilder message = new StringBuilder();
 
         switch (weatherType){
             case "SUN":
-                newCoord = new Coordinates(
+                coordinates = new Coordinates(
                         coordinates.getLongitude() + 2,
                         coordinates.getLatitude(),
                         coordinates.getHeight() + 4);
-                aircraftInformation.append("Some message");
+                aircraftInformation.append("It's to bloody hot today.");
+                break;
             case "RAIN":
-                newCoord = new Coordinates(
+                coordinates = new Coordinates(
                         coordinates.getLongitude(),
                         coordinates.getLatitude(),
                         coordinates.getHeight() - 5);
-                aircraftInformation.append("some text");
+                aircraftInformation.append("Thank God I brought my umbrella");
+                break;
             case "FOG":
-                newCoord = new Coordinates(
+                coordinates = new Coordinates(
                         coordinates.getLongitude(),
                         coordinates.getLatitude(),
                         coordinates.getHeight() - 3);
-                aircraftInformation.append("Some text");
+                aircraftInformation.append("FOG! FOG everywhere");
+                break;
             case "SNOW":
-                newCoord = new Coordinates(
+                coordinates = new Coordinates(
                         coordinates.getLongitude(),
                         coordinates.getLatitude(),
                         coordinates.getHeight() - 15);
+                aircraftInformation.append("It's NEVER too cold for ice cream. Am-nam-nam...");
                 break;
         }
         weatherTower.putDataToFile(aircraftInformation.toString());
+        aircraftInformation.delete(14, aircraftInformation.length());
+
+        if (this.coordinates.getHeight() == 0)
+        {
+            message.append(String.format("%s landing.", aircraftInformation));
+            weatherTower.putDataToFile(message.toString());
+            message.replace(0, message.length(),
+                    String.format("Tower says: %s unregistered from weather tower.", aircraftInformation));
+            weatherTower.putDataToFile(message.toString());
+            weatherTower.unregister(this);
+        }
+
     }
 
     public void registerTower(WeatherTower weatherTower) {
-
+        this.weatherTower =  weatherTower;
+        weatherTower.register(this);
+        StringBuilder message = new StringBuilder();
+        message.append(String.format("Tower says: Baloon#%s(%s) registered to weather tower.", this.name, this.id));
+        weatherTower.putDataToFile(message.toString());
     }
 }

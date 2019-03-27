@@ -1,7 +1,9 @@
 package avaj.simulator;
 
-import avaj.simulator.vehicles.AircraftFactory;
+import avaj.simulator.CustomExceptions.IncorrectAircraftType;
+import avaj.simulator.CustomExceptions.InvalidArgumentsNbrException;
 import avaj.simulator.Interface.Flyable;
+import avaj.simulator.vehicles.AircraftFactory;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -14,8 +16,10 @@ public class Simulator {
     private static List<Flyable> flyables = new ArrayList<>();
 
 
-    public static void main(String[] arg) throws InterruptedException {
+    public static void main(String[] arg) throws InterruptedException, IncorrectAircraftType, InvalidArgumentsNbrException {
         try {
+            if (arg.length > 1)
+                throw new InvalidArgumentsNbrException((char)27 +"[34m\nUsage: " + (char)27 + "[0m" + "java avaj.simulator.Simulator <filename>");
             BufferedReader reader = new BufferedReader(new FileReader(arg[0]));
             String line = reader.readLine();
             if (line != null) {
@@ -37,17 +41,20 @@ public class Simulator {
                 }
 
                 for (int i = 1; i <= simulations; i++) {
+                    String putNumberOfSimulation = "\nSimulation: " + i + "\n";
+                    weatherTower.putDataToFile(putNumberOfSimulation);
                     weatherTower.changeWeather();
                 }
                 reader.close();
             }
         } catch (FileNotFoundException e) {
-            System.out.println("[31m Error: [0mCouldn't find file " + arg[0]);
+            System.out.println((char)27 +"[31m Error: " + (char)27 + "[0m" + "Couldn't find file " + arg[0]);
         } catch (IOException e) {
-            System.out.println("[31m Error: [0mThere was an error while reading the file " + arg[0]);
+            System.out.println((char)27 +"[31m Error: " + (char)27 + "[0m" +  "There was an error while reading the file " + arg[0]);
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("[31m Error: [0mSpecify simulation file");
+            System.out.println((char)27 +"[31m Error: " + (char)27 + "[0m" + "Specify simulation file");
         }
+
     }
 }
 
