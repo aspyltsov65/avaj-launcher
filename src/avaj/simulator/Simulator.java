@@ -2,6 +2,7 @@ package avaj.simulator;
 
 import avaj.simulator.CustomExceptions.IncorrectAircraftType;
 import avaj.simulator.CustomExceptions.InvalidArgumentsNbrException;
+import avaj.simulator.CustomExceptions.InvalidSimulationNbrException;
 import avaj.simulator.Interface.Flyable;
 import avaj.simulator.vehicles.AircraftFactory;
 
@@ -16,7 +17,7 @@ public class Simulator {
     private static List<Flyable> flyables = new ArrayList<>();
 
 
-    public static void main(String[] arg) throws InterruptedException, IncorrectAircraftType, InvalidArgumentsNbrException {
+    public static void main(String[] arg) throws InterruptedException, IncorrectAircraftType, InvalidArgumentsNbrException, InvalidSimulationNbrException {
         try {
             if (arg.length > 1)
                 throw new InvalidArgumentsNbrException((char)27 +"[34m\nUsage: " + (char)27 + "[0m" + "java avaj.simulator.Simulator <filename>");
@@ -26,8 +27,7 @@ public class Simulator {
                 weatherTower = new WeatherTower();
                 int simulations = Integer.parseInt(line.split(" ")[0]);
                 if (simulations < 0) {
-                    System.out.println("Invalid simulations count " + simulations);
-                    System.exit(1);
+                    throw new InvalidSimulationNbrException((char)27 +"[31m \nError: " + (char)27 + "[0m" + "Invalid simulations count " + simulations);
                 }
                 while ((line = reader.readLine()) != null) {
                     Flyable flyable = AircraftFactory.newAircraft(line.split(" ")[0], line.split(" ")[1],
